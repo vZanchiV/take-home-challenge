@@ -1,0 +1,28 @@
+@import "./_variables.scss";
+
+body {
+    font-family:$font-family;
+}
+
+
+.tag {
+    background: #fcfcfc;
+    border:1px solid #ececec;
+    border-radius: 30px;
+    color:$color-text-tag;
+    font-size: 11px;
+    padding: 10px 0;
+    height:30px;
+    line-height:30px;
+}
+
+.card {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+    padding:10px;
+    border:1px #f5f5F5;
+    &__title {
+        color:$color-title;
+        font-size:14px;
+        font-weight: $font-bold;
+    }
+}
