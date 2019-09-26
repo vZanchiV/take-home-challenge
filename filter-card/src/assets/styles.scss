@@ -4,19 +4,25 @@ body {
     font-family:$font-family;
 }
 
+footer {
+    height: 20px;
+    background-color:#fff;
+}
 
-.tag {
+
+.Tag {
     background: #fcfcfc;
     border:1px solid #ececec;
     border-radius: 30px;
     color:$color-text-tag;
     font-size: 11px;
-    padding: 10px 0;
+    padding:  0 15px;
     height:30px;
     line-height:30px;
+    display: inline-block;
 }
 
-.card {
+.Card {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
     padding:10px;
     border:1px #f5f5F5;

@@ -8,9 +8,19 @@ class CardList extends Component {
     }
     render() {
         return (
-            <section>
-                <Card/>
-            </section>
+            <div>
+                <header>
+                    header
+                </header>
+                <section>
+                    <Card/>
+                </section>
+                <footer>
+                    footer
+                </footer>
+            </div>
+            
+            
         )
     }
 }
