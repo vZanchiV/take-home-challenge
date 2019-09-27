@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import React  from 'react'
 const Tag  = (props) => {   
-    const {post} = props
         return (
-            <div class="Tag">
+            <div className="Tag">
                 nulla
             </div>
         )

@@ -8,22 +8,14 @@ class CardList extends Component {
     }
     render() {
         return (
-            <div class="container">
-                <header>
-                    header
-                </header>
-                <section class="CardList">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                </section>
-                <footer>
-                    footer
-                </footer>
+            <div className="CardList">
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
             </div>
-            
-            
         )
     }
 }

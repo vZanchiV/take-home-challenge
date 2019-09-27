@@ -11,6 +11,31 @@ footer {
     background-color:#fff;
 }
 
+.container {
+    padding:10px 30px;
+    
+}
+
+.SearchBar {
+    height:52px;
+    border:1px solid #dddddd;
+    margin: 0 0 12px 0;
+    display:flex;
+    &__btnSearch{
+        -webkit-appearance:none;
+        background: url('./img/loop.svg') 70% 50% no-repeat;
+        background-size:24px 24px;
+        border: none;
+        width:47px;
+        height: 100%;
+        border-right:1px solid #dddddd;
+    }
+    &__input {
+        border: none;
+        padding: 0 0 0 20px;
+        width: 100%;
+    }
+}
 
 .Tag {
     background: #fcfcfc;
@@ -18,16 +43,20 @@ footer {
     border-radius: 30px;
     color:$color-text-tag;
     font-size: 11px;
-    padding:  0 15px;
-    height:30px;
-    line-height:30px;
+    padding:  0 12px;
+    height:20px;
+    line-height:20px;
     display: inline-block;
+}
+
+.CardList {
+    padding: 0 3px;
 }
 
 .Card {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
-    padding:10px;
-    border:2px #f5f5F5 solid;
+    padding:16px;
+    border:1px #f5f5F5 solid;
     height:100px;
     position: relative;
     margin: 0 0 16px 0;
@@ -37,29 +66,28 @@ footer {
         font-size:14px;
         font-weight: $font-bold;
         text-align: center;
-        margin: 10px 0 0 0;
+        margin: 0;
     }
     &__content {
         display: flex;
         flex-wrap:wrap;
-        justify-content: center;
+        justify-content: start;
         position:absolute;
-        bottom:10px;
+        bottom:8px;
         width:100%;
     }
     .Tag {
-        margin: 0 10px 0 0;
+        margin: 0 10px 2px 0;
         align-self: flex-end;
     }
 }
 
 @media screen and (min-width: $bp-sm)  {
-    .container {
-        padding:30px 35px;
-    }
+    
     .CardList {
       display: flex;
       flex-wrap: wrap;
+      
     }
     .Card {
       width:calc(50% - 4px);
