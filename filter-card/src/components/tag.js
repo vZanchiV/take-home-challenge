@@ -1,8 +1,8 @@
 import React  from 'react'
-const Tag  = (props) => {   
+const Tag  = ({tag}) => {   
         return (
             <div className="Tag">
-                nulla
+                {tag}
             </div>
         )
 

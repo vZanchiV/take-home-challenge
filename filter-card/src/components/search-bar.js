@@ -6,6 +6,8 @@ class SearchBar extends Component {
         this.state = { 
             searchText:"",
             placeHolder:"Que recherchez-vous ?",
+            intervalBeforRequest:1000,
+            lockRequest:false
          };
     }
     render() {

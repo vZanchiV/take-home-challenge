@@ -1,19 +1,18 @@
 import React from 'react';
 import Tag from './tag';
-const Card  = (props) => {   
+
+
+const Card  = ({card}) => { 
+    
         return (
+
             <article className="Card">
-                <h2 className="Card__title">titre card</h2>
+                <h2 className="Card__title">{card.name}</h2>
                 <div className="Card__content">
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                    <Tag/>
-                </div>
-               
+                    {card.tags.map((tagName, i) => {
+                        return <Tag key={i} tag={tagName}/>
+                    })}
+                </div>              
             </article>
            
         )
