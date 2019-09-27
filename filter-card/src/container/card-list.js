@@ -8,11 +8,14 @@ class CardList extends Component {
     }
     render() {
         return (
-            <div>
+            <div class="container">
                 <header>
                     header
                 </header>
-                <section>
+                <section class="CardList">
+                    <Card/>
+                    <Card/>
+                    <Card/>
                     <Card/>
                 </section>
                 <footer>

@@ -3,7 +3,7 @@ import Tag from './tag';
 const Card  = (props) => {   
         return (
             <article class="Card">
-                <h2 class="Card__Title">titre card</h2>
+                <h2 class="Card__title">titre card</h2>
                 <div class="Card__content">
                     <Tag/>
                     <Tag/>

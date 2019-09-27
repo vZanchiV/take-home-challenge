@@ -2,6 +2,8 @@
 
 body {
     font-family:$font-family;
+    margin:0;
+    padding:0;
 }
 
 footer {
@@ -25,10 +27,55 @@ footer {
 .Card {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
     padding:10px;
-    border:1px #f5f5F5;
+    border:2px #f5f5F5 solid;
+    height:100px;
+    position: relative;
+    margin: 0 0 16px 0;
+    box-sizing: border-box;
     &__title {
         color:$color-title;
         font-size:14px;
         font-weight: $font-bold;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+    &__content {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        position:absolute;
+        bottom:10px;
+        width:100%;
+    }
+    .Tag {
+        margin: 0 10px 0 0;
+        align-self: flex-end;
     }
 }
+
+@media screen and (min-width: $bp-sm)  {
+    .container {
+        padding:30px 35px;
+    }
+    .CardList {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .Card {
+      width:calc(50% - 4px);
+      &:nth-child(even) {
+        margin: 0 4px 16px 0;
+      }
+      &:nth-child(odd) {
+        margin: 0 0 16px 4px;
+      }
+      
+    }
+  }
+
+
+  @media screen and (min-width: $bp-md) {
+    .Card {
+        width:calc(25% - 4px);
+    }
+  }
