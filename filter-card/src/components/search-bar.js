@@ -22,9 +22,19 @@ class SearchBar extends Component {
         
      }    
      handleChange(e) {
-         this.setState({searchText:e.target.value});
-         
-     }
+        this.setState({searchText:e.target.value});
+        if(!this.state.lockRequest) {
+            this.setState({lockRequest: true});
+            setTimeout(() => {
+                this.search()
+            }, this.state.intervalBeforRequest);
+        }
+    }
+
+    search() {
+        this.props.callback(this.state.searchText)
+        this.setState({lockRequest:false})
+    }
 }
 
 export default SearchBar;
