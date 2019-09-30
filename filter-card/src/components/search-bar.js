@@ -12,10 +12,12 @@ class SearchBar extends Component {
     }
     render() {
         return (
-            <div className="SearchBar">
+            
+            <form role="search" className="SearchBar">
                 <button className="SearchBar__btnSearch" onClick={this.handleOnClick.bind(this)}></button>
-                <input tye="text"  className="SearchBar__input" onChange={this.handleChange.bind(this)} placeholder={this.state.placeHolder}/>
-            </div> 
+                <input type="text"  className="SearchBar__input" onChange={this.handleChange.bind(this)} placeholder={this.state.placeHolder}/>
+            </form>
+           
         );
     }
     handleOnClick(e) {

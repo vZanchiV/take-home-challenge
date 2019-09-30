@@ -11,6 +11,10 @@ footer {
     background-color:#fff;
 }
 
+.hideElem {
+    display: none;
+}
+
 .container {
     padding:10px 30px;
     
@@ -34,6 +38,9 @@ footer {
         border: none;
         padding: 0 0 0 20px;
         width: 100%;
+        &:focus {
+            outline:none;
+        }
     }
 }
 
@@ -46,6 +53,7 @@ footer {
     padding:  0 12px;
     height:20px;
     line-height:20px;
+    font-weight:400;
     display: inline-block;
 }
 

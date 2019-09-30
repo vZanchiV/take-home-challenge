@@ -1,9 +1,9 @@
 import React  from 'react'
 const Tag  = ({tag}) => {   
         return (
-            <div className="Tag">
+            <h3 className="Tag">
                 {tag}
-            </div>
+            </h3>
         )
 
 }

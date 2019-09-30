@@ -10,14 +10,15 @@ class App extends Component {
       super(props)
       this.props.readAllCard();
    }
-   
+
   render() {
     return (
       <div className="container">
-        <header>
+        <h1 className="hideElem">list des cards</h1>
+        <section>
           <SearchBar callback={this.onClickSerch.bind(this)}/>
-        </header>
-        <section >
+        </section>
+        <section role="main">
           <CardList cards={ this.props.cards }/>
         </section>    
       </div>
