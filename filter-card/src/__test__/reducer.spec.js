@@ -1,11 +1,5 @@
 import ReducerCards from '../reducers/reducer-card';
-import {AT_CARD} from '../actions/actions-type';
-import * as actions from '../actions/index';
 import expect from 'expect';
-
-
-
-
 
 describe('post reducer', () => {
 
