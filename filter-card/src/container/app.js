@@ -6,8 +6,8 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
 class App extends Component {
-
-   componentDidMount() {
+  constructor(props) {
+    super(props);
     this.props.getCards();
   }
 
