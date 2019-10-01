@@ -8,11 +8,11 @@ const Card  = ({card}) => {
 
             <article className="Card">
                 <h2 className="Card__title">{card.name}</h2>
-                <div className="Card__content">
+                <ul className="Card__content">
                     {card.tags.map((tagName, i) => {
-                        return <Tag key={i} tag={tagName}/>
+                        return <li className="Card__content__elem" key={i}><Tag  tag={tagName}/></li>
                     })}
-                </div>              
+                </ul>              
             </article>
            
         )

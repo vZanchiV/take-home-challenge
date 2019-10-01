@@ -1,4 +1,4 @@
 export const AT_CARD = {
-    READ_ALL_CARD:"READ_ALL_CARD",
+    GET_CARDS:"GET_CARDS",
     FILTER_CARD:"FILTER_CARD"
 }

@@ -4,10 +4,10 @@ const BASEURL="http://localhost:3000";
 let allCards = []
 
 
-export function readAllCard() {
+export function getCards() {
     return function (dispatch) {
         axios.get(`${BASEURL}/cards`).then(res => {
-            dispatch({type:AT_CARD.READ_ALL_CARD,payload:res.data})
+            dispatch({type:AT_CARD.GET_CARDS,payload:res.data})
             allCards = res.data
         })
     }

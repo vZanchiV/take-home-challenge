@@ -82,6 +82,11 @@ footer {
         position:absolute;
         bottom:8px;
         width:100%;
+        margin:0;
+        padding:0;
+        &__elem {
+            list-style-type: none;
+        }
     }
     .Tag {
         margin: 0 10px 2px 0;
