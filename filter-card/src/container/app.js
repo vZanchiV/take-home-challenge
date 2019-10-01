@@ -10,6 +10,7 @@ class App extends Component {
     super(props);
     this.props.getCards();
   }
+ 
 
   render() {
     return (
@@ -19,7 +20,7 @@ class App extends Component {
           <SearchBar callback={this.onClickSearch.bind(this)}/>
         </section>
         <section role="main">
-          <CardList cards={ this.props.cards }/>
+          <CardList cards={ this.props.cards }/> 
         </section>    
       </div>
     );

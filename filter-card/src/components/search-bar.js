@@ -11,18 +11,14 @@ class SearchBar extends Component {
          };
     }
     render() {
-        return (
-            
+        return (          
             <form role="search" className="SearchBar">
-                <button className="SearchBar__btnSearch" onClick={this.handleOnClick.bind(this)}></button>
+                <div className="SearchBar__btnSearch"></div>
                 <input type="text"  className="SearchBar__input" onChange={this.handleChange.bind(this)} placeholder={this.state.placeHolder}/>
-            </form>
-           
+            </form>           
         );
     }
-    handleOnClick(e) {
-        
-     }    
+   
      handleChange(e) {
         this.setState({searchText:e.target.value});
         if(!this.state.lockRequest) {

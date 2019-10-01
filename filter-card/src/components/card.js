@@ -3,9 +3,7 @@ import Tag from './tag';
 
 
 const Card  = ({card}) => { 
-    
         return (
-
             <article className="Card">
                 <h2 className="Card__title">{card.name}</h2>
                 <ul className="Card__content">
@@ -13,10 +11,8 @@ const Card  = ({card}) => {
                         return <li className="Card__content__elem" key={i}><Tag  tag={tagName}/></li>
                     })}
                 </ul>              
-            </article>
-           
+            </article>          
         )
-
 }
 
 export default Card;
